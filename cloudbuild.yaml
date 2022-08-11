@@ -1,13 +1,13 @@
 steps:
 # Install
-- name: 'gcr.io/cloud-builders/npm:node-16.14.2'
+- name: 'gcr.io/cloud-builders/npm'
   args: ['install']
 # Test
 # - name: 'gcr.io/cloud-builders/npm'
 #   args: ['run', 'test:unit']
 # Build
-- name: 'gcr.io/cloud-builders/npm:node-16.14.2'
-  args: ['run', 'build']
+# - name: 'gcr.io/cloud-builders/npm'
+#   args: ['run', 'build']
 # Deploy
 - name: 'gcr.io/test-project-dev-359015/firebase'
   args: ['deploy', 'project=test-project-dev-359015', '--debug']
