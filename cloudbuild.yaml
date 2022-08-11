@@ -10,5 +10,4 @@ steps:
 #   args: ['run', 'build']
 # Deploy
 - name: 'gcr.io/test-project-dev-359015/firebase'
-  dir: "app/firebase"
   args: ['deploy', '--debug']
