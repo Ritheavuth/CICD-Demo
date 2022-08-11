@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import initializeApp from 'firebase'
+import { initializeApp } from "firebase/app";
 import './assets/main.css'
 
 const firebaseConfig = {
