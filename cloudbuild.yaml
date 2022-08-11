@@ -17,7 +17,7 @@ steps:
     'VUE_APP_FIREBASE_MESSAGE_SENDER_ID=${_VUE_APP_FIREBASE_MESSAGE_SENDER_ID}',
     'VUE_APP_FIREBASE_APP_ID=${_VUE_APP_FIREBASE_APP_ID}'
   ]
-Deploy
-- name: 'gcr.io/test-project-dev-359015/firebase'
+# Deploy
+- name: 'gcr.io/test-project-dev-359015/firebase',
   dir: "app/firebase",
   args: ['deploy', '--debug']
