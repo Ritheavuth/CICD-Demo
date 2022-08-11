@@ -4,12 +4,12 @@ import initializeApp from 'firebase'
 import './assets/main.css'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDHhHjCtw7hJZQ786a1hYjD5SPiX9R5T8I",
-    authDomain: "fir-project-61d00.firebaseapp.com",
-    projectId: "fir-project-61d00",
-    storageBucket: "fir-project-61d00.appspot.com",
-    messagingSenderId: "252583068254",
-    appId: "1:252583068254:web:8507a0ce393a694f902acf"
+    apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
+    authDomain: process.env.VUE_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.VUE_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.VUE_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.VUE_APP_FIREBASE_MESSAGE_SENDER_ID,
+    appId: process.env.VUE_APP_FIREBASE_APP_ID
   };
   
   // Initialize Firebase
